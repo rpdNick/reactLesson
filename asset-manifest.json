@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/reactLesson/static/css/main.7c9f2449.css",
+    "main.js": "/reactLesson/static/js/main.5dcc57d3.js",
+    "static/media/girl-banner.png": "/reactLesson/static/media/girl-banner.30a486be527be61ff695.png",
+    "index.html": "/reactLesson/index.html",
+    "main.7c9f2449.css.map": "/reactLesson/static/css/main.7c9f2449.css.map",
+    "main.5dcc57d3.js.map": "/reactLesson/static/js/main.5dcc57d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c9f2449.css",
+    "static/js/main.5dcc57d3.js"
+  ]
+}
