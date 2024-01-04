@@ -1,0 +1,17 @@
+.counter_wrapper {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+
+    .count_value {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        background: #23856d;
+        color: #fff;
+        font-size: 20px;
+        padding: 6px 24px;
+        min-width: 80px;
+    }
+}

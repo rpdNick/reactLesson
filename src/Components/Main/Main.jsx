@@ -1,5 +1,5 @@
-// import data from "../../data/data";
 import "./Main.scss";
+import Counter from '../Counter/Counter';
 
 const Main = (props) => {
   return (
@@ -27,6 +27,7 @@ const Main = (props) => {
           <img className="banner" src={props.data.banner} alt="banner" />
         </div>
       </div>
+      <Counter/>
     </main>
   );
 };
