@@ -13,6 +13,10 @@ const Counter = () => {
   // Змінна стану
   const [count, setCount] = useState(0);
 
+  if (count < 0) {
+    setCount(0);
+  }
+
   return (
     <div className="counter_wrapper">
       <button onClick={decrement} className="button primary">-</button>
