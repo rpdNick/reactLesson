@@ -1,7 +1,6 @@
 import "./Footer.scss";
 
 const Footer = (props) => {
-    console.log(props)
 
     return (
         <div className="container">

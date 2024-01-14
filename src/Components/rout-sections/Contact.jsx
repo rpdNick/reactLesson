@@ -1,11 +1,11 @@
 import './Sections.scss';
 
-const Section2 = ()=> {
+const Contact = ()=> {
     return(
         <div className='rout_section purple'>
-            <p>Section 2</p>
+            <p>Contact</p>
         </div>
     )
 }
 
-export default Section2;
+export default Contact;

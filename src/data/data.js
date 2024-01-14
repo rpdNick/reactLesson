@@ -8,10 +8,10 @@ const data = {
     header: {    
         logo: logo,
         nav: [
-            {link: 'https://www.google.com/', navName: 'Home'},
-            {link: 'https://www.google.com/', navName: 'About'},
-            {link: 'https://www.google.com/', navName: 'Contact'},
-            {link: 'https://www.google.com/', navName: 'Blog'}
+            {link: '/reactLesson', navName: 'Home'},
+            {link: '/reactLesson/about', navName: 'About'},
+            {link: '/reactLesson/contact', navName: 'Contact'},
+            {link: '/reactLesson/blog', navName: 'Blog'}
         ],
         button: {
             text: 'Sign up'

@@ -1,8 +1,11 @@
+import { NavLink } from "react-router-dom";
 import "./Header.scss";
 // import {v4 as uuidv4} from 'uuid';
 
 const Header = (props) => {
-  // const navData = props.data.nav;
+  const navData = props.data.nav;
+
+  console.log(navData)
 
   return (
     <header className="Header">
@@ -11,6 +14,10 @@ const Header = (props) => {
           <img src={props.data.logo} alt="logo" />
         </div>
         <nav className="Navigation">
+          <NavLink to={navData[0].link}>{navData[0].navName}</NavLink>
+          <NavLink to={navData[1].link}>{navData[1].navName}</NavLink>
+          <NavLink to={navData[2].link}>{navData[2].navName}</NavLink>
+          <NavLink to={navData[3].link}>{navData[3].navName}</NavLink>
           {/* {navData.map((el) => {
             return (
               <a key={uuidv4()} className="Item" href={el.link}>

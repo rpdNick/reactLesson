@@ -1,8 +1,5 @@
 import "./Main.scss";
 import Counter from '../Counter/Counter';
-import Section1 from "../rout-sections/Section1";
-import Section2 from "../rout-sections/Section2";
-import Section3 from "../rout-sections/Section3";
 
 const Main = (props) => {
   console.log(props)
@@ -32,9 +29,6 @@ const Main = (props) => {
         </div>
       </div>
       <Counter/>
-      <Section1/>
-      <Section2/>
-      <Section3/>
     </main>
   );
 };
