@@ -12,7 +12,7 @@ function App(props) {
     <div className="App">
       <Header data={props.data.header} />
       <Routes>
-        <Route path="" element={<Main data={props.data.main}/>} />
+        <Route path="/" element={<Main data={props.data.main}/>} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />

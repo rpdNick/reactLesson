@@ -8,7 +8,7 @@ const data = {
     header: {    
         logo: logo,
         nav: [
-            {link: '', navName: 'Home'},
+            {link: '/', navName: 'Home'},
             {link: '/about', navName: 'About'},
             {link: '/contact', navName: 'Contact'},
             {link: '/blog', navName: 'Blog'}
