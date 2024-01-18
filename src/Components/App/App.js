@@ -12,10 +12,10 @@ function App(props) {
     <div className="App">
       <Header data={props.data.header} />
       <Routes>
-        <Route path="/reactLesson" element={<Main data={props.data.main}/>} />
-        <Route path="/reactLesson/about" element={<About />} />
-        <Route path="/reactLesson/contact" element={<Contact />} />
-        <Route path="/reactLesson/blog" element={<Blog />} />
+        <Route path="" element={<Main data={props.data.main}/>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       {/* <Main data={props.data.main} /> */}
       <Footer data={props.data.footer} />

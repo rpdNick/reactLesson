@@ -2,7 +2,7 @@ import "./Main.scss";
 import Counter from '../Counter/Counter';
 
 const Main = (props) => {
-  console.log(props)
+  
   return (
     <main className="container">
       <div className="main_content">
