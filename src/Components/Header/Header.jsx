@@ -18,6 +18,7 @@ const Header = (props) => {
           <NavLink to={navData[1].link}>{navData[1].navName}</NavLink>
           <NavLink to={navData[2].link}>{navData[2].navName}</NavLink>
           <NavLink to={navData[3].link}>{navData[3].navName}</NavLink>
+          <NavLink to={navData[4].link}>{navData[4].navName}</NavLink>
           {/* {navData.map((el) => {
             return (
               <a key={uuidv4()} className="Item" href={el.link}>
