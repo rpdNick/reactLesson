@@ -1,28 +1,31 @@
 import "./ProductCard.scss";
 
+ function showMoreHendler() {
+    console.log('show more');
+ }
+
 const ProductCard = (props) => {
+    
   return (
     <div className="ProductCard">
       <div className="badge">Hot</div>
       <div className="product_tumb">
-        <img src="" alt="product_image" />
+        <img src={props.product.images[0]} alt="product_image" />
       </div>
       <div className="product_details">
-        <span className="product_catagory">Women,bag</span>
+        <span className="product_catagory">{props.product.category}</span>
         <h4>
-          <p>Women leather bag</p>
+          <p>{props.product.brand}</p>
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-          possimus nostrum!
-        </p>
+        <p>{props.product.description}</p>
         <div className="product_bottom_details">
           <div className="product_price">
-            <small>$96.00</small>$230.99
+            <small>rating: {props.product.rating}</small>
+            <p>${props.product.price}</p>
           </div>
         </div>
         <div className="show_more">
-          <button className="button primary">Show more</button>
+          <button className="button primary" onClick={showMoreHendler}>Show more</button>
         </div>
       </div>
     </div>

@@ -4,8 +4,7 @@ import "./Header.scss";
 
 const Header = (props) => {
   const navData = props.data.nav;
-
-  console.log(navData)
+  // console.log(navData)
 
   return (
     <header className="Header">

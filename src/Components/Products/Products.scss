@@ -1,7 +1,9 @@
 .Products {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 436px);
+    justify-content: space-around;
     gap: 30px;
-    background: rgba(241, 157, 46, 0.877);
+    max-width: 1400px;
+    margin: 0 auto;
     min-height: calc(100vh - 240px);
 }

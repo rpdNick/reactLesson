@@ -1,8 +1,7 @@
 .ProductCard {
-    width: 380px;
+    max-width: 436px;
     position: relative;
     box-shadow: 0 2px 7px #dfdfdf;
-    margin: 50px auto;
     background: #fafafa;
 
     .badge {
@@ -30,7 +29,7 @@
         > img {
             max-width: 100%;
             max-height: 100%;
-            // object-fit: cover;
+            object-fit: cover;
         }
     }
 
@@ -84,9 +83,8 @@
                 > small {
                     font-size: 80%;
                     font-weight: 400;
-                    text-decoration: line-through;
                     display: inline-block;
-                    margin-right: 5px;
+                    margin-bottom: 15px;
                 }
             }
         }
