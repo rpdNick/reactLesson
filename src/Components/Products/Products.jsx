@@ -1,9 +1,10 @@
 import "./Products.scss";
+import ProductCard from "./ProductCard/ProductCard";
 
 const Products = () => {
     return (
         <div className="Products">
-            <p>Products</p>
+            <ProductCard />
         </div>
     );
 }

@@ -1,4 +1,7 @@
 .Products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     background: rgba(241, 157, 46, 0.877);
-    min-height: 200px;
+    min-height: calc(100vh - 240px);
 }
