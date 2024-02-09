@@ -1,11 +1,8 @@
+import { NavLink } from "react-router-dom";
 import "./ProductCard.scss";
 
- function showMoreHendler() {
-    console.log('show more');
- }
-
 const ProductCard = (props) => {
-    
+    // console.log(props)
   return (
     <div className="ProductCard">
       <div className="badge">Hot</div>
@@ -25,7 +22,9 @@ const ProductCard = (props) => {
           </div>
         </div>
         <div className="show_more">
-          <button className="button primary" onClick={showMoreHendler}>Show more</button>
+          <NavLink to={`/products/${props.product.id}`}>
+            <button className="button primary" >Show more</button>
+          </NavLink>
         </div>
       </div>
     </div>

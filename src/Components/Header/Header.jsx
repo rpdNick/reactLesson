@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import "./Header.scss";
-// import {v4 as uuidv4} from 'uuid';
 
 const Header = (props) => {
   const navData = props.data.nav;
@@ -18,13 +17,6 @@ const Header = (props) => {
           <NavLink to={navData[2].link}>{navData[2].navName}</NavLink>
           <NavLink to={navData[3].link}>{navData[3].navName}</NavLink>
           <NavLink to={navData[4].link}>{navData[4].navName}</NavLink>
-          {/* {navData.map((el) => {
-            return (
-              <a key={uuidv4()} className="Item" href={el.link}>
-                {el.navName}
-              </a>
-            );
-          })} */}
         </nav>
         <button className="button primary">{props.data.button.text}</button>
       </div>

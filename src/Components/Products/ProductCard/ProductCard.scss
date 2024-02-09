@@ -1,8 +1,14 @@
 .ProductCard {
     max-width: 436px;
     position: relative;
-    box-shadow: 0 2px 7px #dfdfdf;
     background: #fafafa;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 2px 7px #dfdfdf;
+    }
 
     .badge {
         position: absolute;
