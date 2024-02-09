@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/reactLesson/static/css/main.1474b552.css",
-    "main.js": "/reactLesson/static/js/main.3a4b3f3f.js",
+    "main.css": "/reactLesson/static/css/main.148bda3d.css",
+    "main.js": "/reactLesson/static/js/main.a6c16afb.js",
     "static/media/girl-banner.png": "/reactLesson/static/media/girl-banner.30a486be527be61ff695.png",
     "index.html": "/reactLesson/index.html",
-    "main.1474b552.css.map": "/reactLesson/static/css/main.1474b552.css.map",
-    "main.3a4b3f3f.js.map": "/reactLesson/static/js/main.3a4b3f3f.js.map"
+    "main.148bda3d.css.map": "/reactLesson/static/css/main.148bda3d.css.map",
+    "main.a6c16afb.js.map": "/reactLesson/static/js/main.a6c16afb.js.map"
   },
   "entrypoints": [
-    "static/css/main.1474b552.css",
-    "static/js/main.3a4b3f3f.js"
+    "static/css/main.148bda3d.css",
+    "static/js/main.a6c16afb.js"
   ]
 }
