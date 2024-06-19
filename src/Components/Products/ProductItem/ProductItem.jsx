@@ -14,7 +14,6 @@ const ProductItem = () => {
       .get(`https://dummyjson.com/products/${productId}`)
       .then((response) => {
         setProduct(response.data);
-        console.log(response.data);
       });
   }, [productId]);
 

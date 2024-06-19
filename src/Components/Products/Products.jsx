@@ -7,14 +7,22 @@ import axios from "axios";
 
 const Products = () => {
   let [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("https://dummyjson.com/products").then((response) => {
-      setProducts(response.data.products);
-    });
+    axios
+      .get("https://dummyjson.com/products")
+      .then((response) => {
+        setProducts(response.data.products);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching products:", error);
+        setIsLoading(false);
+      });
   }, []);
 
-  if (!products) {
+  if (isLoading) {
     return <Loader />;
   }
 
