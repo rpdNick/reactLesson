@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Loader from "../../Loader/Loader";
 import "./ProductItem.scss";
 
 const ProductItem = () => {
@@ -15,10 +16,10 @@ const ProductItem = () => {
         setProduct(response.data);
         console.log(response.data);
       });
-  }, []);
+  }, [productId]);
 
   if (!product) {
-    return <div>Loading...</div>;
+    return <Loader />
   }
 
   return (

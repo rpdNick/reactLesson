@@ -1,9 +1,9 @@
 import "./App.scss";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
-import About from "../rout-sections/About";
-import Contact from "../rout-sections/Contact";
-import Blog from "../rout-sections/Blog";
+import About from "../sections/About";
+import Contact from "../sections/Contact";
+import Blog from "../sections/Blog";
 import Footer from "../Footer/Footer";
 import Products from "../Products/Products";
 import ProductItem from "../Products/ProductItem/ProductItem";
