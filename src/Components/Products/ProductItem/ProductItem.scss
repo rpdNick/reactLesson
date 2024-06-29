@@ -1,6 +1,13 @@
 .ProductItem {
-    background: #fafafa;
-    padding: 20px;
+
+    .back_button {
+        margin-bottom: 10px;
+    }
+
+    .product_details {
+        background: #fafafa;
+        padding: 20px;
+    }
 
     .product_header {
         display: flex;

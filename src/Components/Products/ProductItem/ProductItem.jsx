@@ -16,6 +16,7 @@ const ProductItem = () => {
     axios
       .get(`https://dummyjson.com/products/${productId}`)
       .then((response) => {
+        console.log(response)
         setProduct(response.data);
       });
   }, [productId]);
@@ -26,18 +27,20 @@ const ProductItem = () => {
 
   return (
     <div className="ProductItem container">
-      <button className="button primary" onClick={()=> navigate('/all-products')}>Back</button>
-      <div className="product_header">
-        <div className="product_brand">{product.brand}</div>
-        <div className="product_rating">Rating: {product.rating}</div>
-      </div>
-      <div className="columns_container">
-        <div className="column_wrap">
-          <div className="product_name">{product.title}</div>
-          <img className="product_image" src={product.images[0]} alt="product" />
-          <div className="price">{product.price}$</div>
+      <div className="product_details">
+        <button className="button primary back_button" onClick={() => navigate('/all-products')}>Back</button>
+        <div className="product_header">
+          <div className="product_brand">{product.brand}</div>
+          <div className="product_rating">Rating: {product.rating}</div>
         </div>
-        <div className="column_wrap">{product.description}</div>
+        <div className="columns_container">
+          <div className="column_wrap">
+            <div className="product_name">{product.title}</div>
+            <img className="product_image" src={product.images[0]} alt="product" />
+            <div className="price">{product.price}$</div>
+          </div>
+          <div className="column_wrap">{product.description}</div>
+        </div>
       </div>
     </div>
   );
