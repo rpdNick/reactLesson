@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Loader from "../../Loader/Loader";
 import "./ProductItem.scss";
 
 const ProductItem = () => {
+  const navigate = useNavigate();
+
   let [product, setProduct] = useState(null);
   let { productId } = useParams();
   console.log(productId);
@@ -23,6 +26,7 @@ const ProductItem = () => {
 
   return (
     <div className="ProductItem container">
+      <button className="button primary" onClick={()=> navigate('/all-products')}>Back</button>
       <div className="product_header">
         <div className="product_brand">{product.brand}</div>
         <div className="product_rating">Rating: {product.rating}</div>
