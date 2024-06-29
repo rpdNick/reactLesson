@@ -29,7 +29,7 @@ Your app is ready to be deployed!
 
 ### `npm run deploy`
 
-Deploy the app on github page
+Builds the app and deploy on github page
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
