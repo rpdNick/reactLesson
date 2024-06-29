@@ -28,7 +28,7 @@ const ProductItem = () => {
   return (
     <div className="ProductItem container">
       <div className="product_details">
-        <button className="button primary back_button" onClick={() => navigate('/all-products')}>Back</button>
+        <button className="button primary back_button" onClick={() => navigate(-1)}>Back</button>
         <div className="product_header">
           <div className="product_brand">{product.brand}</div>
           <div className="product_rating">Rating: {product.rating}</div>
