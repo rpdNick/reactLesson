@@ -1,0 +1,25 @@
+.Comments {
+    display: grid;
+    gap: 20px;
+    background: #fafafa;
+    margin-top: 20px;
+    padding: 20px;
+
+    .new_comment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        .new_comment_field {
+            min-height: 80px;
+            width: 100%;
+            resize: none;
+            padding: 15px;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            box-shadow: 2px 2px 8px rgba(black, .3);
+        }
+    }
+}

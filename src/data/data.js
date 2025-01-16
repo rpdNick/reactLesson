@@ -9,7 +9,7 @@ const data = {
         logo: logo,
         nav: [
             {link: '/', navName: 'Home'},
-            {link: '/all-products', navName: 'Travel products'},
+            {link: '/all-products', navName: 'Products'},
             {link: '/about', navName: 'About'},
             {link: '/contact', navName: 'Contact'},
             {link: '/blog', navName: 'Blog'}

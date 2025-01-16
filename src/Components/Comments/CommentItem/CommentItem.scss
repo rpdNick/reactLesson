@@ -1,0 +1,35 @@
+.CommentItem {
+    background-color: #394264;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+    .autor {
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+
+    .autor,
+    .comment_text,
+    .like_count {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .likes {
+        display: flex;
+        gap: 5px;
+        justify-content: flex-end;
+        align-items: center;
+
+        .icon_wrap {
+            width: 30px;
+            height: 30px;
+
+            > img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
