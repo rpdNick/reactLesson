@@ -7,7 +7,7 @@ import "./Comments.scss";
 
 const Comments = () => {
   let [comments, setReviws] = useState([]);
-  let [currentComment, setCurrentComment] = useState();
+  let [currentComment, setCurrentComment] = useState('');
   let { productId } = useParams();
 
   useEffect(() => {
@@ -36,8 +36,7 @@ const Comments = () => {
     axios
       .post(`https://dummyjson.com/comments/add`, newComment)
       .then((response) => {
-        console.log("Comment added successfully:", response.data);
-        setReviws((prevComments) => [...prevComments, response.data]);
+        setReviws((prevComments) => [response.data, ...prevComments]);
         setCurrentComment('');
       })
       .catch((error) => {
@@ -46,7 +45,6 @@ const Comments = () => {
   };
 
   const getCommentValue = (e) => {
-    // console.log(e.target.value);
     let commentValue = e.target.value;
     setCurrentComment(commentValue);
   }
